@@ -1,10 +1,6 @@
 #-*- coding:utf-8 -*-
 
-# =======================================================================  
-# FuncName: 10008_selfinspect.py  
-# Desc: vprc-core selfinpsect  
-# Date: 2017-12-01   
-# Author: xuwenyuan 
+# ======================================================================= 
 # =======================================================================  
 
 
@@ -12,20 +8,6 @@ import logging
 from flask import Flask,request,jsonify
 import requests
 import time
-
-#测试环境
-vprc_url='vprc-core-stg1.paic.com.cn'
-route='/api/stg'
-activeHost='127.0.0.1'
-activePort='8080'
-notify_url=''
-#生产环境
-#vprc_url='vprc-core.paic.com.cn'
-#route='/api/prd'
-#activeHost=''
-#activePort=''
-#notify_url=''
-
 #日志输出定义  
 logging.basicConfig(level=logging.DEBUG,
                 format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
